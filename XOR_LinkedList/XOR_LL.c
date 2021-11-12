@@ -87,8 +87,15 @@ int main(void){
 	head=insertFront(head,1);
 	head=insertFront(head,2);
 	head=insertFront(head,3);
+	printf("After Inserting at Front\n");
+	Display(head);
 	head=insertRear(head,4);
+	printf("After Inserting at Rear\n");
+	Display(head);
 	head=delete_front(head);
+    	printf("After deleting at front\n");
+    	Display(head);
 	head=delete_rear(head);
+    	printf("After deleting at Rear\n");
 	Display(head);
 }
